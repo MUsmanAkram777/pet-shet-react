@@ -1,0 +1,397 @@
+:root {
+  --green: #63e263;
+  --lightGreen: #aae0aa;
+  --aquaish: #6699ff;
+  --blueish: #6699ff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+.petImg {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.petImg img {
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  width: 100%;
+  height: 100%;
+}
+
+.petImg:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.cartSmall {
+  background: #000;
+  position: relative;
+  top: -10px;
+  padding: 2px 5px;
+  font-size: 10px;
+}
+
+.deleteIcon {
+  position: absolute;
+  top: 3px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 22px;
+  z-index: 1;
+}
+
+.deleteIcon svg {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.deleteIcon svg:hover {
+  color: #000 !important;
+}
+
+.slick-arrow {
+  display: block;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  z-index: 11;
+}
+
+.slick-arrow:first-child {
+  left: 5%;
+}
+
+.slick-arrow:first-child::before {
+  font-size: 40px;
+}
+
+.slick-arrow:last-child {
+  right: 5%;
+}
+
+.slick-arrow:last-child::before {
+  font-size: 40px;
+}
+
+h1,
+h2 {
+  font-weight: 900;
+}
+
+h3,
+h4 {
+  font-weight: 700;
+}
+
+h5,
+h6 {
+  font-weight: 500;
+}
+
+.petBtn {
+  color: #fff;
+  background: var(--aquaish);
+  padding: 7px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  border: 1px solid transparent;
+}
+
+.petBtn:hover {
+  color: #000 !important;
+  background-color: transparent;
+  border-color: #000;
+}
+
+.petBtnSecondary {
+  color: #fff;
+  background: #000;
+  padding: 7px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  border: 1px solid transparent;
+}
+
+.petBtnSecondary:hover {
+  color: var(--aquaish) !important;
+  background-color: transparent;
+  border-color: var(--aquaish);
+}
+
+.headings {
+  margin: 0 0 25px 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.headings span {
+  padding: 0 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.headings:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  left: 0;
+  top: 40%;
+  z-index: 1;
+}
+
+.headings:after {
+  position: absolute;
+  content: "";
+  width: 96%;
+  height: 2px;
+  background-color: #000;
+  left: 2%;
+  top: 55%;
+  z-index: 1;
+}
+
+.gridListIcons {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.mySelectCols {
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.topBar {
+  padding: 8px 0;
+  text-align: center;
+}
+
+.topBar p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  padding: 30px 0 20px 0;
+}
+
+.logo span.logoIcon {
+  padding: 5px 17px;
+  border-radius: 50%;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 0 10px;
+  -webkit-box-shadow: 0px 0px 40px inset #aae0aa;
+          box-shadow: 0px 0px 40px inset #aae0aa;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.logo .catLogo {
+  position: relative;
+}
+
+.logo .catLogo::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid #000;
+  border-radius: 5px;
+  left: -2px;
+  top: -22px;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  z-index: 1 !important;
+}
+
+.logo .catLogo::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid #000;
+  border-radius: 5px;
+  right: -2px;
+  top: -22px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.petNav {
+  background-color: #6699ff;
+  text-align: center;
+}
+
+.petNav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.petNav ul li {
+  display: inline-block;
+  padding: 15px 0px;
+}
+
+.petNav ul li a {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 17px 25px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  background-color: transparent;
+}
+
+.petNav ul li a:hover {
+  background-color: #aae0aa;
+}
+
+.petSlideImg {
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.petSlideImg img {
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.petSlideImg:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.petsBannerAside {
+  position: relative;
+}
+
+.petsBannerAside .bannerAsideText {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: justify;
+  margin-top: -7px;
+}
+
+.petsBannerAside::before {
+  position: absolute;
+  content: "";
+  height: 101%;
+  width: 60%;
+  background-color: var(--blueish);
+  z-index: 1;
+  top: -5px;
+}
+
+.petsFooter {
+  padding: 50px 0;
+  background: #e0e0e0;
+}
+
+.grid.myAnimalCard {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.grid.myAnimalCard:hover {
+  background-color: var(--aquaish);
+  color: #fff;
+  position: relative;
+  z-index: 1111;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+.grid.myAnimalCard:hover a {
+  color: #fff;
+}
+
+.grid.myAnimalCard .myAnimalDetailBox h3 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.grid.myAnimalCard .myAnimalDetailBox p {
+  word-break: break-all;
+}
+
+.list.myAnimalCard:hover a {
+  color: #fff;
+}
+
+.list.myAnimalCard .myAnimalDetailBox h3 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.list.myAnimalCard .myAnimalDetailBox p {
+  word-break: break-all;
+}
+
+.myFilterCards {
+  max-height: 115px;
+  overflow-y: scroll;
+}
+
+.myFilterCards::-webkit-scrollbar {
+  width: 3px;
+}
+
+.myFilterCards::-webkit-scrollbar-track {
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.myFilterCards::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+}
+
+.myFilterCards p {
+  cursor: pointer;
+}
+
+.myFilterCards .lineThrought {
+  text-decoration: line-through;
+  font-style: italic;
+}
+/*# sourceMappingURL=style.css.map */
